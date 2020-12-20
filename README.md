@@ -1,5 +1,9 @@
 # Landing-Page
 
+Programming Language:
+----------------------
+- Javascript
+
 The project purpose:
 --------------------
 When scroll into a specific section, the bg of it and the related anchor will change to indicate which section the user already see it in the screen (inside the viewport).
@@ -29,5 +33,8 @@ Change bg of section and it's link in the navigation bar when found in the scree
 - addEventListener()
 - forEach()
 - getBoundingClientRect()
--------------------------------------------------------------------------------------------------------------------
 
+Resources:
+----------
+- MDN
+- W3schools

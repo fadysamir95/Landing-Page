@@ -28,7 +28,8 @@ navList.appendChild(fragment);  // Put all list items inside ul
 // Make the scrolling more smooth
 const ele = document.querySelectorAll('.menu__link');
 ele.forEach(function(anchor) {
-    anchor.addEventListener('click', (function(){
+    anchor.addEventListener('click', (function(event){
+        event.preventDefault;
         const section = document.getElementById(anchor.getAttribute("data-link"));
         section.scrollIntoView({behavior: "smooth"});
     }))
@@ -39,7 +40,7 @@ document.addEventListener('scroll', function(e) {
     sectionsList.forEach(function(section) {
         let rect = section.getBoundingClientRect();
         section.classList.remove('active');
-        if (rect.top >= 0 && rect.bottom <= 1000) {
+        if (rect.top >= -100 && rect.top < 400 ) {
             section.classList.add('active');
         }
     });
